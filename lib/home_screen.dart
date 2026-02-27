@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
-  Completer<GoogleMapController> _controller = Completer();
+  final Completer<GoogleMapController> _controller = Completer();
   loadLocationServicesPrompt() async {
     Position position = await getUserCurrentLocation();
     final GoogleMapController controller = await _controller.future;
@@ -60,8 +60,8 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  List<Marker> _marker = [];
-  List<Marker> _list = [
+  final List<Marker> _marker = [];
+  final List<Marker> _list = [
     Marker(
       markerId: MarkerId('1'),
       position: LatLng(32.995921, 73.664862),
@@ -78,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
       position: LatLng(36.2048, 138.2529),
     ),
   ];
-
+@override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(

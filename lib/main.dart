@@ -3,6 +3,8 @@ import 'package:googlemapsflutter/convert_latlong_to_address.dart';
 import 'package:googlemapsflutter/google_places_api.dart';
 import 'package:googlemapsflutter/home_screen.dart';
 
+import 'custom_marker_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: GooglePlacesApi(),
+      home: CustomMarkerScreen(),
     );
   }
 }
