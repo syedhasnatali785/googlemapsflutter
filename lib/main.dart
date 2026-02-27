@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:googlemapsflutter/convert_latlong_to_address.dart';
+import 'package:googlemapsflutter/google_places_api.dart';
 import 'package:googlemapsflutter/home_screen.dart';
 
 void main() {
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: HomeScreen(),
+      home: GooglePlacesApi(),
     );
   }
 }

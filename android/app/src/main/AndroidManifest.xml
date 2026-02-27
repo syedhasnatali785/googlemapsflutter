@@ -7,9 +7,9 @@
         android:label="googlemapsflutter"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
-        <!-- <meta-data
+         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="xxxxxxxxxxxxxxxxxx"/> -->
+            android:value="AIzaSyDWgeOroVovcKcbJ7iz5-1WZBroiRrjf-k"/> -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
